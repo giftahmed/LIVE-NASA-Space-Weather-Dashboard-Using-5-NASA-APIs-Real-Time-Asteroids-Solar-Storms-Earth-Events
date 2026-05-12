@@ -7,7 +7,7 @@
 
 > A real-time, interactive monitoring dashboard for space weather, asteroid tracking, Earth events, and deep space imagery — powered entirely by NASA's public APIs.
 
-![Dashboard Preview](https://raw.githubusercontent.com/giftahmed/nasa-space-weather-dashboard/CometR3_Orion.jpg)
+![Dashboard Preview](https://raw.githubusercontent.com/giftahmed/nasa-space-weather-dashboard/Dashboard.png)
 
 ---
 
