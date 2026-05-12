@@ -7,7 +7,7 @@
 
 > A real-time, interactive monitoring dashboard for space weather, asteroid tracking, Earth events, and deep space imagery — powered entirely by NASA's public APIs.
 
-![Dashboard Preview](https://raw.githubusercontent.com/giftahmed/nasa-space-weather-dashboard/Dashboard.png)
+![Dashboard Preview](https://raw.githubusercontent.com/giftahmed/nasa-space-weather-dashboard/main/Dashboard.png)
 
 ---
 
@@ -45,7 +45,7 @@
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/nasa-space-weather-dashboard.git
+git clone https://github.com/giftahmed/nasa-space-weather-dashboard.git
 cd nasa-space-weather-dashboard
 
 # 2. Create a virtual environment (recommended)
@@ -98,35 +98,6 @@ nasa-space-weather-dashboard/
 
 The dashboard caches data for 5 minutes to stay well within limits.
 
----
-
-## 🛠️ Development
-
-### Running Tests
-
-```bash
-pytest tests/
-```
-
-### Code Style
-
-```bash
-# Format code
-black nasa_space_weather_dashboard.py
-
-# Check linting
-flake8 nasa_space_weather_dashboard.py
-```
-
-### Adding a New API Module
-
-1. Add an API wrapper function in `nasa_space_weather_dashboard.py`
-2. Create a `render_*_section()` function for the UI
-3. Add a new tab in the `main()` function
-4. Update this README with the new module
-
----
-
 ## 🌍 Deployment
 
 ### Streamlit Cloud (Free)
@@ -136,31 +107,6 @@ flake8 nasa_space_weather_dashboard.py
 3. Connect your GitHub repo
 4. Add your `NASA_API_KEY` in the Secrets manager
 5. Deploy!
-
-### Docker
-
-```bash
-# Build image
-docker build -t nasa-dashboard .
-
-# Run container
-docker run -p 8501:8501 -e NASA_API_KEY=your_key nasa-dashboard
-```
-
-### Docker Compose
-
-```yaml
-version: '3.8'
-services:
-  dashboard:
-    build: .
-    ports:
-      - "8501:8501"
-    environment:
-      - NASA_API_KEY=${NASA_API_KEY}
-```
-
----
 
 ## 📊 API Reference
 
@@ -221,10 +167,10 @@ NASA imagery and data are public domain courtesy of the U.S. government. This pr
 
 ## 🙏 Acknowledgments
 
-- [NASA Open APIs](https://api.nasa.gov/) — for making incredible space data freely available
-- [Streamlit](https://streamlit.io/) — for the amazing Python app framework
-- [Plotly](https://plotly.com/) — for beautiful interactive visualizations
-- The entire space science community — for exploring the cosmos and sharing what you find
+- [NASA Open APIs](https://api.nasa.gov/) - for making incredible space data freely available
+- [Streamlit](https://streamlit.io/) - for the amazing Python app framework
+- [Plotly](https://plotly.com/) - for beautiful interactive visualizations
+- The entire space science community - for exploring the cosmos and sharing what you find
 
 ---
 
@@ -241,5 +187,5 @@ NASA imagery and data are public domain courtesy of the U.S. government. This pr
   <br>
   <em>"We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard."</em>
   <br>
-  — John F. Kennedy
+   John F. Kennedy
 </p>
