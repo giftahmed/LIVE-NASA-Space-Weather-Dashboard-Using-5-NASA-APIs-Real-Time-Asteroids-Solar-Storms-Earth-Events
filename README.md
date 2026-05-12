@@ -7,7 +7,7 @@
 
 > A real-time, interactive monitoring dashboard for space weather, asteroid tracking, Earth events, and deep space imagery — powered entirely by NASA's public APIs.
 
-![Dashboard Preview](https://raw.githubusercontent.com/giftahmed/LIVE-NASA-Space-Weather-Dashboard-Using-5-NASA-APIs-Real-Time-Asteroids-Solar-Storms-Earth-Events/CometR3_Orion.jpg)
+![Dashboard Preview](https://raw.githubusercontent.com/giftahmed/nasa-space-weather-dashboard/CometR3_Orion.jpg)
 
 ---
 
@@ -52,10 +52,7 @@ cd nasa-space-weather-dashboard
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# 3. Install dependencies
-pip install -r requirements.txt
-
-# 4. (Optional) Configure your NASA API key
+# 3. (Optional) Configure your NASA API key
 # Option A: Environment variable
 export NASA_API_KEY="your_api_key_here"  # Linux/Mac
 set NASA_API_KEY=your_api_key_here       # Windows
@@ -64,7 +61,7 @@ set NASA_API_KEY=your_api_key_here       # Windows
 mkdir -p .streamlit
 echo 'NASA_API_KEY = "your_api_key_here"' > .streamlit/secrets.toml
 
-# 5. Launch the dashboard
+# 4. Launch the dashboard
 streamlit run nasa_space_weather_dashboard.py
 ```
 
@@ -77,17 +74,8 @@ The app will open automatically at `http://localhost:8501`
 ```
 nasa-space-weather-dashboard/
 ├── nasa_space_weather_dashboard.py   # Main Streamlit application
-├── requirements.txt                  # Python dependencies
 ├── .streamlit/
 │   └── secrets.toml                  # API key configuration (gitignored)
-├── assets/
-│   └── preview.png                   # Dashboard screenshot
-├── docs/
-│   ├── api_reference.md              # NASA API endpoint documentation
-│   └── screenshots/                  # Additional screenshots
-├── tests/
-│   └── test_api_functions.py         # Unit tests for API wrappers
-├── LICENSE                           # MIT License
 └── README.md                         # This file
 ```
 
@@ -242,9 +230,9 @@ NASA imagery and data are public domain courtesy of the U.S. government. This pr
 
 ## 📬 Contact
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/nasa-space-weather-dashboard/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/nasa-space-weather-dashboard/discussions)
-- **Email**: your.email@example.com
+- **Issues**: [GitHub Issues](https://github.com/giftahmed/nasa-space-weather-dashboard/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/giftahmed/nasa-space-weather-dashboard/discussions)
+- **Email**:giftahmed2@gmail.com
 
 ---
 
